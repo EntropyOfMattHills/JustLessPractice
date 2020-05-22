@@ -1,16 +1,16 @@
-@buttoncolor: #00ffe1;
+@buttoncolor: hsla(173, 100%, 50%, 1);;
 
 .ButtonHover{
 	font-family:"Bradley Hand";
 	font-size: medium;
-	color: #6b53f5;
+	color: hsla(249, 89%, 64%, 1);
 	border: 6px fadeout(black, 85%);
 	background-color: desaturate(@buttoncolor, 30%);
 	cursor: pointer;
 }
 .NiceButtons(@radius){
 	border-radius: @radius;
-	color: #0000FF;
+	color: rgb(23%, 94%, 63%, 1);
 	border: 10px  black;
 	&:hover{
 		.ButtonHover;
@@ -18,7 +18,7 @@
 }
 .NiceHypertext{
 	&:link{
-		 color: #00ff99; 
+		 color: hsl(156, 100%, 50%); 
   		 border-bottom: 6px;
 	}
 	&:visited{
@@ -35,7 +35,7 @@
 }
 
 .bookmark{
-	.NiceButtons(36px);
+	.NiceButtons(40px);
 	padding: 5px;
 	width: 20vw;
 	height: 1vh;
