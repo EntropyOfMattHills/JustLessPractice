@@ -1,4 +1,5 @@
 @buttoncolor: #00ffe1;
+.dashed(@height: 20, @color: @text, @width: 8, @thickness: 1, @length: 4)
 .ButtonHover{
 	color: #7B68EE;
 	border: 2px dashed fadeout(black, 85%);
@@ -16,10 +17,11 @@
 .NiceHypertext{
 	&:link{
 		 color: #00ff99; 
-  		 border-bottom: 6px dashed;
+  		 border-bottom: 6px;
 	}
 	&:visited{
 		color: #FF4500;
+		.dashed;
 	}
 	&:hover{
 		color: #154088; 
@@ -27,7 +29,8 @@
 	}
 	&:active{
 		color: #497DDD; 
-  		border-bottom: 1px dashed;
+  		border-bottom: 1px;
+		.dashed;
 	}
 }
 .menu {
